@@ -23,19 +23,7 @@ pip install cgkmc
 
 ## 🔖 Citing
 
-If you found this package useful, please cite our work on arXiv:
-
-```
-@misc{cgkmc,
-      title={Kinetic Monte Carlo prediction of the morphology of pentaerythritol tetranitrate}, 
-      author={Jacob Jeffries and Himanshu Singh and Romain Perriot and Christian Negre and Antonio Redondo and Enrique Martinez},
-      year={2025},
-      eprint={2509.25490},
-      archivePrefix={arXiv},
-      primaryClass={cond-mat.mtrl-sci},
-      url={https://arxiv.org/abs/2509.25490}, 
-}
-```
+If you found this package useful, please cite [our work in Crystal Growth & Design](https://doi.org/10.1021/acs.cgd.5c01428).
 
 ## ❤️ Acknowledgements
 
