@@ -19,10 +19,19 @@ upstream  https://github.com/jwjeffr/cgkmc.git
 
 ## Local Python environment
 
-Use Python 3.9 or newer from the repository root.
+Use Python 3.9 through 3.12 from the repository root. The package pins
+`numpy ~= 2.0.2` and `scipy ~= 1.13.1`, so Python 3.13+ is not a supported
+environment for this checkout.
+
+On this Mac, install Python 3.12 with Homebrew if `python3.12` is not already
+available:
 
 ```bash
-python3 -m venv .venv
+brew install python@3.12
+```
+
+```bash
+python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
