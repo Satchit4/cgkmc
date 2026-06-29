@@ -27,8 +27,10 @@ This fork includes a local reproduction guide and PETN input file:
 The full paper-scale run can be launched from a local editable install with:
 
 ```bash
+rm -rf .venv
 python3.12 -m venv .venv
 source .venv/bin/activate
+python --version
 python -m pip install -e ".[dev]"
 python -m cgkmc \
   --input_file examples/petn_paper.json \

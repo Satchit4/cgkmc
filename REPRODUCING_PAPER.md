@@ -31,8 +31,10 @@ brew install python@3.12
 ```
 
 ```bash
+rm -rf .venv
 python3.12 -m venv .venv
 source .venv/bin/activate
+python --version
 python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
 ```
