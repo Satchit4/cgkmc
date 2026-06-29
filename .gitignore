@@ -179,3 +179,7 @@ scratch.py
 
 *.dump
 *.dump.gz
+
+# Local reproduction outputs
+/results/*
+!/results/.gitkeep

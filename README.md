@@ -17,6 +17,23 @@ Crystal Growth Kinetic Monte Carlo.
 pip install cgkmc
 ```
 
+## 🔁 Reproducing the PETN paper results
+
+This fork includes a local reproduction guide and PETN input file:
+
+- `REPRODUCING_PAPER.md`
+- `examples/petn_paper.json`
+
+The full paper-scale run can be launched from a local editable install with:
+
+```bash
+python -m cgkmc \
+  --input_file examples/petn_paper.json \
+  --dump_file results/petn.dump \
+  --dump_every 1000 \
+  --log_file results/petn.log
+```
+
 ## 📃 License
 
 `cgkmc` is released under the MIT License.
