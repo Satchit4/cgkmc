@@ -105,6 +105,23 @@ OVITO settings used in the paper:
 - Probe radius: `7 A`
 - Smoothing level: `100`
 
+To recreate Figure 2 with the same surface-area definition, export surface
+areas with OVITO and then rebuild the plot:
+
+```bash
+python -m pip install ovito
+python tools/export_ovito_surface_area.py \
+  --dump results/petn.dump \
+  --output results/petn_ovito_surface_area.csv \
+  --radius 7.0 \
+  --smoothing 100
+node tools/build_petn_figure2_from_ovito.mjs
+gnuplot tools/plot_petn_figure2_ovito.gp
+```
+
+This writes `results/petn_surface_energy_ovito.csv` and overwrites
+`results/figure2_petn_surface_energy.png` with the OVITO-alpha-shape curve.
+
 For Figure 2, the paper computes:
 
 ```text
